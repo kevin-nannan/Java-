@@ -1,0 +1,36 @@
+1.重写toString方法
+用StringBuffered容器来存取数组中的object 然后用append添加
+        @Override
+        public String toString() {
+                StringBuilder sb=new StringBuilder();
+                sb.append("[");
+                for(int i=0;i<size;i++) {
+                        sb.append(elementDate[i]+",");
+                }
+                sb.setCharAt(sb.length()-1, ']');
+                return sb.toString();
+        }
+2.add方法添加泛型
+数组越界在add中实现数组扩容
+        public void add(E element) {
+                elementDate[size++]=element;
+                if(size==elementDate.length) {
+                        Object[] newArray=new Object[elementDate.length+(elementDate.length>>1)];
+                        System.arraycopy(elementDate, 0, newArray, 0, elementDate.length);
+                        elementDate=newArray;
+                }
+        }
+zckArrayList2
+1.实现了get和set方法
+2.添加了checkindex检查索引是否越界
+3.自定义构建数组时 实现对长度的检查
+4.remove的两种实现
+    1通过index参数，将数组index之后的部分拷贝到index及之后位置，这样index的值就被index+1覆盖
+ 然后要将elementObject[size-1]=null总长度减一 size--
+    2.通过传入element对象 for循环get（i） 比较equals 找出第一个相同的值 然后remove（i）
+    
+    
+
+       
+ 
+        
