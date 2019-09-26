@@ -1,0 +1,11 @@
+1.新建一个node类 属性：previous，next，element
+2.初步实现LinkedList的add方法
+        1如果first为空则设置first和last都为add的node类
+        2如果不为空，则设置last.next=node node.previous=last node=last 
+3.重写toString方法
+        Node temp=first
+        然后while（temp！=null） 打印temp.element 然后temp=temp.next一直打印        
+4.get方法实现 first的index次next
+或者二分法查找 较快
+temp=first or last要放在for循环外 避免查找首尾时 报错
+5.remove
