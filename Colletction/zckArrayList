@@ -1,5 +1,5 @@
-1.ÖØĞ´toString·½·¨
-ÓÃStringBufferedÈİÆ÷À´´æÈ¡Êı×éÖĞµÄobject È»ºóÓÃappendÌí¼Ó
+1.é‡å†™toStringæ–¹æ³•
+ç”¨StringBufferedå®¹å™¨æ¥å­˜å–æ•°ç»„ä¸­çš„object ç„¶åç”¨appendæ·»åŠ 
         @Override
         public String toString() {
                 StringBuilder sb=new StringBuilder();
@@ -10,8 +10,8 @@
                 sb.setCharAt(sb.length()-1, ']');
                 return sb.toString();
         }
-2.add·½·¨Ìí¼Ó·ºĞÍ
-Êı×éÔ½½çÔÚaddÖĞÊµÏÖÊı×éÀ©Èİ
+2.addæ–¹æ³•æ·»åŠ æ³›å‹
+æ•°ç»„è¶Šç•Œåœ¨addä¸­å®ç°æ•°ç»„æ‰©å®¹
         public void add(E element) {
                 elementDate[size++]=element;
                 if(size==elementDate.length) {
@@ -21,13 +21,14 @@
                 }
         }
 zckArrayList2
-1.ÊµÏÖÁËgetºÍset·½·¨
-2.Ìí¼ÓÁËcheckindex¼ì²éË÷ÒıÊÇ·ñÔ½½ç
-3.×Ô¶¨Òå¹¹½¨Êı×éÊ± ÊµÏÖ¶Ô³¤¶ÈµÄ¼ì²é
-4.removeµÄÁ½ÖÖÊµÏÖ
-    1Í¨¹ıindex²ÎÊı£¬½«Êı×éindexÖ®ºóµÄ²¿·Ö¿½±´µ½index¼°Ö®ºóÎ»ÖÃ£¬ÕâÑùindexµÄÖµ¾Í±»index+1¸²¸Ç
- È»ºóÒª½«elementObject[size-1]=null×Ü³¤¶È¼õÒ» size--
-    2.Í¨¹ı´«Èëelement¶ÔÏó forÑ­»·get£¨i£© ±È½Ïequals ÕÒ³öµÚÒ»¸öÏàÍ¬µÄÖµ È»ºóremove£¨i£©
+1.å®ç°äº†getå’Œsetæ–¹æ³•
+2.æ·»åŠ äº†checkindexæ£€æŸ¥ç´¢å¼•æ˜¯å¦è¶Šç•Œ
+3.è‡ªå®šä¹‰æ„å»ºæ•°ç»„æ—¶ å®ç°å¯¹é•¿åº¦çš„æ£€æŸ¥
+4.removeçš„ä¸¤ç§å®ç°
+    1é€šè¿‡indexå‚æ•°ï¼Œå°†æ•°ç»„indexä¹‹åçš„éƒ¨åˆ†æ‹·è´åˆ°indexåŠä¹‹åä½ç½®ï¼Œè¿™æ ·indexçš„å€¼å°±è¢«index+1è¦†ç›–
+ ç„¶åè¦å°†elementObject[size-1]=nullæ€»é•¿åº¦å‡ä¸€ size--
+    2.é€šè¿‡ä¼ å…¥elementå¯¹è±¡ forå¾ªç¯getï¼ˆiï¼‰ æ¯”è¾ƒequals æ‰¾å‡ºç¬¬ä¸€ä¸ªç›¸åŒçš„å€¼ ç„¶åremoveï¼ˆiï¼‰
+    
     
     
 
